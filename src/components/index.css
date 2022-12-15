@@ -1,0 +1,28 @@
+
+
+
+.Weather {
+    margin: 0 auto;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+
+
+
+.weather-datetime {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather-time {
+    font-size: 4rem;
+}
+.weather-date {
+    font-size: 2rem;
+}
+.weather-day {
+    font-size: 2rem;
+}
