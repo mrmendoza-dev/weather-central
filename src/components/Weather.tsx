@@ -46,7 +46,6 @@ export default function Weather() {
       navigator.geolocation.getCurrentPosition(function (position) {
         var latitude = position.coords.latitude;
         var longitude = position.coords.longitude;
-        console.log(latitude)
         setCoordinates({ lat: latitude, lon: longitude });
       });
     }, []); 
@@ -57,9 +56,13 @@ export default function Weather() {
 
     return (
       <div className="Weather">
+        <div
+          className="weather-bg"
+          style={{ backgroundImage: "url(../src/assets/sunset.jpg)" }}
+        ></div>
         <div className="weather-header">
           <a href="/">
-            <h1 className="weather-title">WeatherCentral</h1>
+            <p className="weather-title">WeatherCentral</p>
           </a>
         </div>
 
@@ -84,7 +87,10 @@ export default function Weather() {
         </div>
 
         <div className="weather-main">
-          <a href={`https://www.google.com/maps/@${coordinates.lat},${coordinates.lon}`} target="_blank">
+          <a
+            href={`https://www.google.com/maps/@${coordinates.lat},${coordinates.lon}`}
+            target="_blank"
+          >
             <p className="weather-location">{weatherData.name}</p>
           </a>
           <p className="weather-temp">

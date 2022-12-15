@@ -1,8 +1,7 @@
 
 :root {
 
-    --clr-font: #ffffff;
-    --clr-bg: #000000;
+
 }
 
 * {
@@ -15,8 +14,7 @@ html {
 }
 
 body {
-  background-color: var(--clr-bg);
-  color: var(--clr-font);   
+ background-color: black;
 }
 
 button {
@@ -33,7 +31,6 @@ img {
 }
 
 .App {
-  font-size: 16px;
   display: flex;
 }
 
