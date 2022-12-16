@@ -4,7 +4,7 @@
 
 .Weather {
 
-    --clr-font: rgba(255, 255, 255, 0.90);
+    --clr-font: rgba(255, 255, 255, 0.80);
     --clr-bg: #000000;
   color: var(--clr-font);  
 
@@ -30,7 +30,7 @@
     z-index: -1;
     background-size: cover;
     filter: blur(15px) brightness(85%);
-    background-image: url("../assets/sunset.jpg");
+    background-image: url("../src/assets/sunset.jpg");
 }
 
 .weather-title {
@@ -75,7 +75,7 @@ p:hover {
 
 .weather-main {
     font-size: 1.8rem;
-    margin-top: 2em;
+    margin-top: 1.2em;
 }
 
 
