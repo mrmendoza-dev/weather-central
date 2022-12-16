@@ -30,7 +30,7 @@
     z-index: -1;
     background-size: cover;
     filter: blur(15px) brightness(85%);
-    background-image: url("./assets/sunset.jpg");
+    background-image: url("../src/assets/sunset.jpg");
 }
 
 .weather-title {

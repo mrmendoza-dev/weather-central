@@ -58,7 +58,7 @@ export default function Weather() {
       <div className="Weather">
         <div
           className="weather-bg"
-          style={{ backgroundImage: "url(../src/assets/sunset.jpg)" }}
+          // style={{ backgroundImage: "url(../src/assets/sunset.jpg)" }}
         ></div>
         <div className="weather-header">
           <a href="/">
