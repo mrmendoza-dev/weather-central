@@ -4,4 +4,4 @@ Modern weather tracker app using the OpenWeatherMap Api to get current weather d
 
 
 ## Resources
-[OpenWeatherMap Api](https://openweathermap.org/)
+[OpenWeatherMap API](https://openweathermap.org/)
