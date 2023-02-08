@@ -1,104 +1,88 @@
-
-
-
-
 .Weather {
+  --clr-font: rgba(255, 255, 255, 0.8);
+  --clr-bg: #000000;
+  color: var(--clr-font);
 
-    --clr-font: rgba(255, 255, 255, 0.80);
-    --clr-bg: #000000;
-  color: var(--clr-font);  
-
-    /* margin: 0 auto; */
-    font-size: 16px;
-    text-align: center;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    position: relative;
-    user-select: none;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  /* margin: 0 auto; */
+  font-size: 16px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  position: relative;
+  user-select: none;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .weather-bg {
-    width: inherit;
-    height: inherit;
-    position: absolute;
-    z-index: -1;
-    background-size: cover;
-    filter: blur(15px) brightness(85%);
-    background-image: url("../src/assets/sunset.jpg");
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  z-index: -1;
+  background-size: cover;
+  filter: blur(15px) brightness(80%);
+  background-image: url("../assets/sunset.jpg");
 }
 
 .weather-title {
-    font-weight: 200;
-    font-size: 1.8rem;
-    letter-spacing: -1px;
-
+  font-weight: 200;
+  font-size: 1.8rem;
+  letter-spacing: -1px;
 }
 
 .weather-header {
-    position: fixed;
-    left: 0;
-    top: 0;
-    padding: .2em 1em;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 0.2em 1em;
 }
 
-
 .weather-datetime {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
 }
 
 .weather-time {
-    font-size: 5rem;
-    font-weight: 200;
+  font-size: 5rem;
+  font-weight: 200;
 }
 .weather-date {
-    font-size: 1.8rem;
-    text-align: left;
+  font-size: 1.8rem;
+  text-align: left;
 }
 .weather-day {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 p:hover {
-    color: #ffffff;
+  color: #ffffff;
 }
-
-
 
 .weather-main {
-    font-size: 1.8rem;
-    margin-top: 1.2em;
+  font-size: 1.8rem;
+  margin-top: 1.2em;
 }
-
 
 .weather-location {
-    font-size: 2.6rem;
+  font-size: 2.6rem;
 }
 
-
 .weather-temp {
-    font-size: 8rem;
-    font-weight: 200;
-    line-height: 1.1;
+  font-size: 8rem;
+  font-weight: 200;
+  line-height: 1.1;
 }
 
 .weather-status {
-    font-size: 2rem;
-
+  font-size: 2rem;
 }
 
 .weather-temp-range {
-    margin-top: .4em;
-
+  margin-top: 0.4em;
 }
-
-
-
