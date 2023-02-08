@@ -60,7 +60,11 @@
   font-size: 2rem;
 }
 
-p:hover {
+.Weather p {
+  transition: color 200ms;
+}
+
+.Weather p:hover {
   color: #ffffff;
 }
 
