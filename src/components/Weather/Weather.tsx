@@ -1,7 +1,7 @@
 import { render } from "react-dom"
 import "./index.css"
 import { useState, useEffect } from "react";
-import { defaultWeatherData } from "./data/defaulltData";
+import { defaultWeatherData } from "../data/defaulltData";
 
 // https://openweathermap.org/
 
@@ -58,8 +58,8 @@ export default function Weather() {
       <div className="Weather">
         <div
           className="weather-bg"
-          // style={{ backgroundImage: "url(../src/assets/sunset.jpg)" }}
         ></div>
+
         <div className="weather-header">
           <a href="/">
             <p className="weather-title">WeatherCentral</p>
@@ -105,22 +105,3 @@ export default function Weather() {
       </div>
     );
 }
-
-
-
-/* <div className="flex">
-<p className="">{coordinates.lat.toFixed(3)}</p>
-<p className="">{coordinates.lon.toFixed(3)}</p>
-</div> */
-
-/* <p className="weather-temp-feels">
-Feels Like: {weatherData.main.feels_like.toFixed(0)}&deg;
-</p> */
-
-/* <div className="flex weather-stats">
-<p className="">Pressure: {weatherData.main.pressure}</p>
-<p className="">Humidity: {weatherData.main.humidity}</p>
-<p className="">
-  <i className="fa-solid fa-wind"></i> {weatherData.wind.speed}
-</p>
-</div> */
