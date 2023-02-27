@@ -9,7 +9,7 @@
   font-family: "Inter", sans-serif;
   font-weight: 400;
   position: relative;
-  user-select: none;
+  /* user-select: none; */
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -47,7 +47,6 @@
   justify-content: center;
   gap: 1em;
 }
-
 .weather-time {
   font-size: 5rem;
   font-weight: 200;
@@ -89,4 +88,44 @@
 
 .weather-temp-range {
   margin-top: 0.4em;
+}
+
+.forecast {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  position: relative;
+  gap: 1em;
+  cursor: pointer;
+  margin-top: 1em;
+  height: 200px;
+}
+
+.forecast-day {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  align-items: stretch;
+  /* justify-content: space-between; */
+  flex-grow: 1;
+}
+.day-name {
+  font-size: 1.6rem;
+  border-bottom: 1px solid var(--clr-font);
+  margin-bottom: 0.2em;
+  text-align: center;
+}
+
+.hour-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.6em;
+  font-size: 1.1rem;
+}
+
+.avg-row {
+  font-size: 2rem;
+  text-align: center;
 }
