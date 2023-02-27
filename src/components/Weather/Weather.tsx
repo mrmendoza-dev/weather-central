@@ -2,6 +2,13 @@ import "./index.css";
 import { useState, useEffect } from "react";
 import { defaultWeatherData } from "../data/defaulltData";
 
+
+import eveningBg from "../../assets/bg/evening.jpg";
+import morningBg from "../../assets/bg/morning.jpg";
+import nightBg from "../../assets/bg/night.jpg";
+import rainyNightBg from "../../assets/bg/rainyNight.jpg";
+
+
 interface WeatherData {
   [key: string]: any[];
 }
@@ -16,6 +23,22 @@ export default function Weather() {
   const [weatherData, setWeatherData] = useState<WeatherData>({});
   const [detailed, setDetailed] = useState(false);
   const [time, setTime] = useState(new Date());
+  const [currentBg, setCurrentBg] = useState(eveningBg);
+
+
+
+
+function changeBackground() {
+      const hours = time.getHours();
+      if (hours >= 6 && hours < 12) {
+        setCurrentBg(morningBg);
+      } else if (hours >= 12 && hours < 18) {
+        setCurrentBg(eveningBg);
+      } else if (hours >= 18 || hours < 6) {
+        setCurrentBg(nightBg);
+      }
+}
+
 
   function getWeatherData() {
     let apiUrl = `${baseUrl}weather?lat=${coordinates.lat}&lon=${
@@ -123,6 +146,7 @@ export default function Weather() {
       var longitude = position.coords.longitude;
       setCoordinates({ lat: latitude, lon: longitude });
     });
+    changeBackground();
   }, []);
 
   useEffect(() => {
@@ -131,7 +155,7 @@ export default function Weather() {
 
   return (
     <div className="Weather">
-      <div className="weather-bg"></div>
+      <div className="weather-bg" style={{ backgroundImage: `url(${currentBg})`, backgroundSize: "cover" }}></div>
 
       <div className="weather-header">
         <a href="/">
