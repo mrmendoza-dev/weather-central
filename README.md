@@ -1,5 +1,8 @@
 # weather-central
-Modern weather tracker app using the OpenWeatherMap Api to get current weather data.
+### Modern weather tracker app using the OpenWeatherMap Api to get current weather data.
+- View current weather data
+- Data for 5-day weather forecast
+- Reactive backgrounds
 
 ## Resources
 - [OpenWeatherMap API](https://openweathermap.org/)
